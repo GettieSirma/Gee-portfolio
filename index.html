@@ -10,47 +10,11 @@
     <!-- Font Awesome CSS -->
     <script src="https://kit.fontawesome.com/f8b48650f6.js" crossorigin="anonymous"></script>
     <style>
-      /* Media Queries */
 
-/* Phones */
-@media only screen and (max-width: 400px) {
-  .navbar-brand img {
-    max-height: 40px;
-    margin-left: 20px;
-  }
-}
-
-/* Small devices */
-@media only screen and (max-width: 500px) {
-  .navbar.bg-dark {
-    background-color: #337ab7; /* Change to your desired color */
-  }
-}
-
-/* Tablets */
-@media only screen and (min-width: 401px) and (max-width: 992px) {
-  .navbar-nav .nav-link {
-    max-height: 60px;
-  }
-}
-
-/* Desktops */
-@media only screen and (min-width: 993px) {
-  .navbar-brand img {
-    max-height: 70px;
-    margin-left: 50px;
-  }
-}
-
-/* Hide upper-header container on screens up to 300px */
-@media only screen and (max-width: 300px) {
-  .container-fluid.upper-header {
-    display: none;
-  }
-}
 
         body {
             font-family: 'Poppins', sans-serif;
+            min-height: 5000px;
             
    
         }
@@ -71,7 +35,7 @@
 .container-fluid.upper-header {
         margin-left: auto;
         margin-right: auto;
-        max-width: 100%; /* Adjust the maximum width as needed */
+        max-width: 100%;
         margin-top:0;
         margin-bottom:0;
      
@@ -86,9 +50,9 @@
     margin: 5px 30px;
 }
 .contact-info > p > a:first-child {
-        border-right: 1px solid #FFFFFF; /* Adjust color and width as needed */
-        padding-right: 10px; /* Adjust spacing between text and divider as needed */
-        margin-right: 20px; /* Adjust spacing between divider and phone number as needed */
+        border-right: 1px solid #FFFFFF; 
+        padding-right: 10px; 
+        margin-right: 20px; 
         height: 20px;
     }
 
@@ -99,48 +63,73 @@ button {
     border-top: 0;
     border-bottom: 0;
   border-radius: 0;
+  margin-right:30px ;
 }
 
 .dropdown-form {
-    display: none; /* Initially hide the form */
-    width: 300px; /* Adjust form width as needed */
-    margin: 0 auto; /* Center the form horizontally */
-    padding: 20px; /* Add padding for better appearance */
-    background-color: #012060; /* Set background color */
-    border-radius: 8px; /* Add rounded corners */
-    box-shadow: 0 2px 4px #012060; /* Add shadow for depth */
+    display: none; 
+    width: 300px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #012060;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #012060;
 }
 
 
     .form-group {
-        margin-bottom: 15px; /* Add space between form fields */
+        margin-bottom: 15px; 
     }
 
     /* Style for submit button */
     .submit-btn {
-        display: block; /* Display as block element */
-        width: 100%; /* Full width button */
-        padding: 10px 40px; /* Add padding */
-        background-color:#012060; /* Button background color */
+        display: block; 
+        width: 100%; 
+        padding: 10px 40px; 
+        background-color:#012060; 
         border-color: #F23A16;
-        color: #fff; /* Text color */
-        border: none; /* Remove border */
-        border-radius: 5px; /* Add rounded corners */
-        cursor: pointer; /* Show pointer on hover */
+        color: #fff; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer; 
     }
 
-    /* Style for button container */
+    /* button container */
     .btn-container {
-        text-align: center; /* Center align button */
+        text-align: center; 
     }
-        /* Navigation Bar Styles */
-      /* Navigation Bar Styles */
+        /* Nav Bar Styles */
+     
 .navbar {
     background-color: #F9F9F9;
     border-bottom: 2px solid #B16952;
     padding-top: 0px;
     margin-left: 30px;
     margin-right: 30px;
+    width: 100%;
+}
+/* Phones */
+@media only screen and (max-width: 400px) {
+    .navbar-brand img {
+        max-height: 40px;
+        margin-left: 20px;
+    }
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 401px) and (max-width: 992px) {
+    .navbar-nav .nav-link {
+        max-height: 30px;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width: 993px) {
+    .navbar-brand img {
+        max-height: 70px;
+        margin-left: 50px;
+    }
 }
 
 .navbar-brand img {
@@ -152,25 +141,32 @@ button {
 .navbar-nav .nav-link {
     margin-left: 50px;
     justify-content: space-between;
-    color: black; /* Change to the color you prefer */
-    font-weight: bold; /* Optional: If you want the text to be bold */
+    color: black; 
+    font-weight: bold;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #B16952; /* Change the color to your desired hover color */
-    /* Add any other styling you want for the hover effect */
+    color: #B16952;
+   
 }
-/* CSS Styles to Change Border Color and Background Color of Search Button */
+ */
 #searchForm .btn {
-    /* Change border color */
+
     border-color:white;
-    /* Change background color */
+
     background-color: #333;
     color: white;
-    /* Add any other styling you want */
+
 }
 
-
+/* dashboard */
+.dashbar {
+      display: list-item;
+        background-color: #333; 
+        color: white; 
+        padding: 10px; 
+    }
+ 
         /* Carousel Styles */
         .carousel-caption h1 {
             font-size: 4em;
@@ -380,22 +376,22 @@ button {
 /* Background image styling */
 .background-image {
     width: 100%;
-    height: 300px; /* Adjust as needed */
-    overflow: hidden; /* Ensure the image stays within the container */
+    height: 300px;
+    overflow: hidden; 
     border-radius: 5px;
-    margin-bottom: 20px; /* Add some space between the image and the registration box */
+    margin-bottom: 20px; 
 }
 
 .background-image img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the container */
+    height: auto; 
+    object-fit: cover; 
 }
 
 /* Registration box styling */
 .registration-box {
     width: 70%;
-    max-width: 70%; /* Limit the maximum width */
+    max-width: 70%; 
     border: 1px solid #ccc;
     border-radius: 30px;
     background-color: #f9f9f9;
@@ -404,32 +400,32 @@ button {
 
 .registration-box h2 { 
     margin-top: 15px;
-    margin-bottom: 10px; /* Add some space below the heading */
+    margin-bottom: 10px; 
 }
 
 .registration-box hr {
     border-top: 1px solid #ccc;
     width: 80%;
-    margin: 0 auto 20px; /* Center the horizontal line and add some space below it */
+    margin: 0 auto 20px;
 }
 
 .registration-box p {
-    margin-bottom: 10px; /* Add some space below the paragraph */
+    margin-bottom: 10px; 
 }
 
 .registration-box .form-group {
-    margin-bottom: 20px; /* Add some space between form elements */
+    margin-bottom: 20px; 
 }
 
 .registration-box label {
-    font-weight: bold; /* Make labels bold for better visibility */
+    font-weight: bold; 
 }
 .form-container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 50px; /* Adjust width as needed */
-        margin: auto; /* Center the form horizontally */
+        width: 50px; 
+        margin: auto; 
     }
 
     .form-group {
@@ -461,12 +457,12 @@ button {
     /* why travel with us */
 
 .favicons {
-    margin-bottom: 15px; /* Add some spacing between the favicons and text */
+    margin-bottom: 15px; 
 }
 
 .custom-border-right {
     position: relative;
-    height: 230px; /* Set your desired height here */
+    height: 230px;
 }
 
 .custom-border-right::after {
@@ -476,7 +472,7 @@ button {
     bottom: 0;
     right: 0;
     width: 1px;
-    background-color:#B16952; /* Adjust border color as needed */
+    background-color:#B16952; 
 }
 
 /* footer */
@@ -536,18 +532,19 @@ footer {
 </div>
 <!-- end of upper header -->
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg mx-auto colored-margin">
-        <a class="navbar-brand" href="#">
-            <img src="/ezzimages/logo.png" alt="twiggy travels Logo"><span class="logo-text"></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg mx-auto colored-margin">
+    <a class="navbar-brand" href="#">
+        <img src="/ezzimages/logo.png" alt="Twiggy Travels Logo"><span class="logo-text"></span>
+    </a>
+    <button class="navbar-toggler" id="toggleDashbar" aria-label="Toggle Dashbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link " href="#" id="navbarDropdownDestination" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="#" id="navbarDropdownDestination" aria-haspopup="true" aria-expanded="false">
                     Home
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownDestination">
@@ -880,7 +877,6 @@ footer {
     </div>
     <!-- end of almost -->
 
-<!-- start of vip -->
 <!-- Start of VIP Section -->
 <div class="container vip-section mt-5">
     <div class="row">
@@ -1099,6 +1095,7 @@ footer {
 
 
 <script>
+
    // Function to handle form submission on search
    document.getElementById("searchForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent form submission
@@ -1109,7 +1106,14 @@ footer {
         } else {
             alert("Please enter a search term.");
         }
-    }); 
+    });
+// navbar
+      const toggleButton = document.getElementById('toggleDashbar');
+        const dashbar = document.getElementById('dashbar');
+
+        toggleButton.addEventListener('click', () => {
+            dashbar.classList.toggle('show-dashbar');
+        });
 </script>
 </body>
 </html>
